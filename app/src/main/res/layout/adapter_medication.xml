@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="15dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvEventIdText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="5dp"
+        android:text="@string/text_event_id"
+        android:textSize="20sp"
+        android:textColor="@color/blackText"/>
+
+    <TextView
+        android:id="@+id/tvEventId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tvEventIdText"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="5dp"
+        android:text="@string/hint_event_id"
+        android:textSize="20sp"
+        android:textColor="@color/gray"/>
+
+    <TextView
+        android:id="@+id/tvMedicationNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvEventIdText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="5dp"
+        android:text="@string/text_medication_name"
+        android:textSize="20sp"
+        android:textColor="@color/blackText"/>
+
+    <TextView
+        android:id="@+id/tvMedicationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:layout_constraintTop_toBottomOf="@id/tvEventId"
+        app:layout_constraintStart_toEndOf="@id/tvMedicationNameText"
+        android:text="@string/hint_medication_name"
+        android:textSize="20sp"
+        android:textColor="@color/gray"/>
+
+    <TextView
+        android:id="@+id/tvMedicationTypeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvMedicationNameText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="5dp"
+        android:text="@string/text_medication_type"
+        android:textSize="20sp"
+        android:textColor="@color/blackText"/>
+
+    <TextView
+        android:id="@+id/tvMedicationType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:layout_constraintTop_toBottomOf="@id/tvMedicationName"
+        app:layout_constraintStart_toEndOf="@id/tvMedicationTypeText"
+        android:text="@string/hint_medication_type"
+        android:textSize="20sp"
+        android:textColor="@color/gray"/>
+
+    <TextView
+        android:id="@+id/tvTimeStampText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvMedicationTypeText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="5dp"
+        android:text="@string/text_date"
+        android:textSize="20sp"
+        android:textColor="@color/blackText"/>
+
+    <TextView
+        android:id="@+id/tvTimeStamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:layout_constraintTop_toBottomOf="@id/tvMedicationType"
+        app:layout_constraintStart_toEndOf="@id/tvTimeStampText"
+        android:layout_marginBottom="10dp"
+        android:text="@string/hint_date"
+        android:textSize="20sp"
+        android:textColor="@color/aqua"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
